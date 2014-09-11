@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+
+/**
+ * @author ymei
+ *
+ */
+public class WagePay {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      daypay();
+	  weekpay();
+	}
+	public static void daypay(){
+		double hours=2.5;
+		double wages = 8.0;
+		double daypay=wages*hours;
+		System.out.println (daypay);
+	}
+	public static void weekpay(){
+		int days=2;
+		double weekpay=daypay*days;
+		System.out.println(weekpay);
+	}
+}

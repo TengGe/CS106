@@ -1,0 +1,45 @@
+/**
+ * 
+ */
+
+/**
+ * @author ymei
+ *
+ */
+public class WagePay {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      pay();
+	}
+      
+   public static void pay(){
+	   // Declare the variables and store the values.
+		double hours=2.5;
+		double wages=8.0;
+		int days=2;
+		int months=4;
+	  // Calculate the money earns in a day.
+		double daypay=wages*hours;
+		System.out.println ("Daily payment:"+"$"+daypay);
+	  // Calculate the money earns in a week.
+		double weekpay=daypay*days;
+		System.out.println("Weekly payment:"+"$"+weekpay);
+	  // Calculate the money earns in a month.
+		double monthpay=weekpay*months;
+		System.out.println("Monthly payment:"+"$"+monthpay);
+      // Calculate the money earns in a semester.
+		double semester=monthpay*months;
+		System.out.println("You can earn "+"$"+semester+" per semester!");
+		}
+	
+	
+	
+	
+	
+}
+
+
