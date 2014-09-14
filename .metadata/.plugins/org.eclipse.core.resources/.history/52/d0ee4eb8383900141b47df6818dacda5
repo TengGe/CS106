@@ -1,0 +1,11 @@
+
+public class WagePay {
+
+	public static void main(String[] args) {
+      double x=8.0;
+      
+	
+
+	}
+
+}

@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+
+/**
+ * @author ymei
+ *
+ */
+import java.util.Scanner;
+public class Wage {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	 Scanner scanner = new Scanner(System.in);
+	  System.out.print("Your name, adventurer? >");
+	    String name = "";
+	    name = scanner.next();
+	    System.out.println();
+
+	}
+
+}
