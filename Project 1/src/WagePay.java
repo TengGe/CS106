@@ -19,31 +19,30 @@ public class WagePay {
 	 int days=2;
 	 int weeks=4;
 	 int months=4;
-	 
-	 daypay(hours,wages,days,weeks,months);
-	 weekpay(hours,wages,days,weeks,months);
-	 monthpay(hours,wages,days,weeks,months);
-	 semesterpay(hours,wages,days,weeks,months);
+	 // Methods
+	 dayPay(hours,wages,days,weeks,months);
+	 weekPay(hours,wages,days,weeks,months);
+	 monthPay(hours,wages,days,weeks,months);
+	 semesterPay(hours,wages,days,weeks,months);
 	 }
 	// Calculate the money earns in a day.   
-   public static void daypay(double hours,double wages,int days,int weeks,int months){
+   public static void dayPay(double hours,double wages,int days,int weeks,int months){
 
-	  
-		double daypay=wages*hours;
-		System.out.println ("Daily payment:"+"$"+daypay);
+                double dayPay=wages*hours;
+		System.out.println ("Daily payment:"+"$"+dayPay);
    }
    // Calculate the money earns in a week.
-   public static void weekpay(double hours,double wages,int days,int weeks,int months){
-		double weekpay=wages*hours*days;
-		System.out.println("Weekly payment:"+"$"+weekpay);
+   public static void weekPay(double hours,double wages,int days,int weeks,int months){
+		double weekPay=wages*hours*days;
+		System.out.println("Weekly payment:"+"$"+weekPay);
    }
    // Calculate the money earns in a month.
-   public static void monthpay(double hours,double wages,int days,int weeks,int months){
-		double monthpay=weeks*wages*hours*days;
-		System.out.println("Monthly payment:"+"$"+monthpay);
+   public static void monthPay(double hours,double wages,int days,int weeks,int months){
+		double monthPay=weeks*wages*hours*days;
+		System.out.println("Monthly payment:"+"$"+monthPay);
 }
    // Calculate the money earns in a semester.
-   public static void semesterpay(double hours,double wages,int days,int weeks,int months){
+   public static void semesterPay(double hours,double wages,int days,int weeks,int months){
 		double semester=months*weeks*wages*hours*days;
 		System.out.println("I can earn "+"$"+semester+" per semester!");
 		}		
