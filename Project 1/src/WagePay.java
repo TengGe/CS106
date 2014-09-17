@@ -6,47 +6,46 @@
  * @author ymei
  *
  */
+
+
+import java.util.*;
 public class WagePay {
 
 	/**
 	 * @param args
 	 */
+	//Declare constants
+	public static final int WEEKS=4;
+	public static final int MONTHS=12;
+	
+	//Main method
 	public static void main(String[] args) {
-		
-	 // Declare the variables and store the values.
-	 double hours=2.5;
-	 double wages=8.0;
-	 int days=2;
-	 int weeks=4;
-	 int months=4;
+	
+	// User input:wages,hours,days
+     Scanner console=new Scanner (System.in);
+     System.out.println("Enter Your wages:");
+	 double wages=console.nextDouble ();
+	 System.out.println("Enter number of hours you works per day:");
+	 double hours=console.nextDouble ();
+     System.out.println("Enter number of days you works per week:");
+     int days=console.nextInt();
+     System.out.println("Income Tax rate (percent):");
+     double tax=console.nextDouble();
+     //print results
+	 double dayPay= pay(wages,hours);
+	 double weekPay= pay(wages,hours)*days;
+	 double monthPay=weekPay*WEEKS;
+	 double salary=monthPay*MONTHS-monthPay*MONTHS*(tax/100);
+	 System.out.println("Your daily payment is "+"$"+dayPay);
+	 System.out.println("Your weekly payment is "+"$"+weekPay);
+	 System.out.println("Your monthly payment is "+"$"+monthPay);
+	 System.out.println("Your salary is "+"$"+salary+" Per year");
 	 
-	 daypay(hours,wages,days,weeks,months);
-	 weekpay(hours,wages,days,weeks,months);
-	 monthpay(hours,wages,days,weeks,months);
-	 semesterpay(hours,wages,days,weeks,months);
 	 }
-	// Calculate the money earns in a day.   
-   public static void daypay(double hours,double wages,int days,int weeks,int months){
-
-	  
-		double daypay=wages*hours;
-		System.out.println ("Daily payment:"+"$"+daypay);
+   
+   // Calculate daily earn
+   public static double pay(double hours,double wages){
+        return hours*wages; 
    }
-   // Calculate the money earns in a week.
-   public static void weekpay(double hours,double wages,int days,int weeks,int months){
-		double weekpay=wages*hours*days;
-		System.out.println("Weekly payment:"+"$"+weekpay);
-   }
-   // Calculate the money earns in a month.
-   public static void monthpay(double hours,double wages,int days,int weeks,int months){
-		double monthpay=weeks*wages*hours*days;
-		System.out.println("Monthly payment:"+"$"+monthpay);
-}
-   // Calculate the money earns in a semester.
-   public static void semesterpay(double hours,double wages,int days,int weeks,int months){
-		double semester=months*weeks*wages*hours*days;
-		System.out.println("I can earn "+"$"+semester+" per semester!");
-		}		
-}
 
-
+}

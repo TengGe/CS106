@@ -1,0 +1,49 @@
+/**
+ * 
+ */
+
+/**
+ * @author ymei
+ *
+ */
+
+
+import java.util.*;
+public class WagePay {
+
+	/**
+	 * @param args
+	 */
+	//Declare constants
+	public static final int WEEKS=4;
+	public static final int MONTHS=4;
+	
+	//Main method
+	public static void main(String[] args) {
+	
+	// User input:wages,hours,days
+    Scanner console=new Scanner (System.in);
+    System.out.println("Enter Your wages: ");
+	 double wages=console.nextDouble ();
+	 System.out.println("Enter Your work hours:");
+	 double hours=console.nextDouble ();
+     System.out.println("Enter number of days you works: ");
+     int days=console.nextInt();
+     
+     //print results
+	 double dayPay= pay(wages,hours);
+	 double weekPay= pay(wages,hours)*days;
+	 double monthPay=weekPay*WEEKS;
+	 double SemesterPay=monthPay*MONTHS;
+	 System.out.println("Your daily payment is "+"$"+dayPay);
+	 System.out.println("YOur weekly payment is "+"$"+weekPay);
+	 System.out.println("YOur monthly payment is "+"$"+monthPay);
+	 System.out.println("You can earn "+"$"+SemesterPay+" Per semster!");
+	 
+	 }
+   
+   // Calculate daily earn
+   public static double pay(double hours,double wages){
+        return hours*wages; 
+   }
+}

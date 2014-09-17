@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+
+/**
+ * @author ymei
+ *
+ */
+
+
+
+public class WagePay {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+	 // Declare the variables and store the values.
+	
+	 double dayPay= pay(2.5,8.0);
+     System.out.println ("Your daily pay is"+dayPay);
+	 }
+	// Calculate the money earns in a day.   
+   public static double pay(double hours,double wages){
+        return hours*wages; 
+   }
+}
+
