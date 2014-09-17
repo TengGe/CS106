@@ -36,9 +36,9 @@ public class WagePay {
 	 double weekPay= pay(wages,hours)*days;
 	 double monthPay=weekPay*WEEKS;
 	 double salary=monthPay*MONTHS-monthPay*MONTHS*(tax/100);
-	 System.out.println("Your daily payment: "+"$"+dayPay);
-	 System.out.println("Your weekly payment: "+"$"+weekPay);
-	 System.out.println("Your monthly payment: "+"$"+monthPay);
+	 System.out.println("Your daily payment is "+"$"+dayPay);
+	 System.out.println("Your weekly payment is "+"$"+weekPay);
+	 System.out.println("Your monthly payment is "+"$"+monthPay);
 	 System.out.println("Your salary is "+"$"+salary+" Per year");
 	 
 	 }
