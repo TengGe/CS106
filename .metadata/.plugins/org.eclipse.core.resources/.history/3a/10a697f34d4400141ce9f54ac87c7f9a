@@ -56,22 +56,9 @@ public class Project2 {
 		else {
 			typeOne+=3;
 		}
-        
+        comparison(typeOne,typeTwo);
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public static void comparison(int typeOne, int typeTwo) {
      if(typeOne>typeTwo){
     	 System.out.println("You are genius");}
