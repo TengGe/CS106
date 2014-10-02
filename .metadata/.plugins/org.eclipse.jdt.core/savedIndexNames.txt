@@ -1,6 +1,0 @@
-INDEX VERSION 1.126+/students/home/ymei/CS106/.metadata/.plugins/org.eclipse.jdt.core
-820019804.index
-4203328324.index
-1669391102.index
-3395883707.index
-344445544.index
