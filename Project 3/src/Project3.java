@@ -1,6 +1,3 @@
-/**
- * 
- */
 
 /**
  * @author Yuteng Mei
@@ -49,6 +46,9 @@ public class Project3 {
 		// Declare a string variable named one that store user's input
 		String one = console.nextLine();
 
+		// use while statement to check if the user enter the valid input.
+		// if user input values that are not Yes or No,it will prompt for
+		// correct input.
 		while (!(one.equalsIgnoreCase("Yes") || one.equalsIgnoreCase("No"))) {
 			System.out.println("Not the answer i want");
 			System.out.print("Try again:");
@@ -87,6 +87,10 @@ public class Project3 {
 		System.out.println("D.i dont like sport");
 		// Declare a string variable named Two that store user's input
 		String two = console.nextLine();
+
+		// use while statement to check if the user enter the valid input.
+		// if user input values that are not A, B, C, and D. it will prompt for
+		// correct input.
 		while (!(two.equalsIgnoreCase("A") || two.equalsIgnoreCase("B")
 				|| two.equalsIgnoreCase("C") || two.equalsIgnoreCase("D"))) {
 			System.out.println("Please enter what i ask");
@@ -131,6 +135,9 @@ public class Project3 {
 		System.out.println("D: I dont know any of this movies");
 		// Declare a string variable named three that store user's input
 		String three = console.nextLine();
+		// use while statement to check if the user enter the valid input.
+		// if user input values that are not A, B, C, and D. it will prompt for
+		// correct input.
 		while (!(three.equalsIgnoreCase("A") || three.equalsIgnoreCase("B")
 				|| three.equalsIgnoreCase("C") || three.equalsIgnoreCase("D"))) {
 			System.out.println("Please enter what i ask");
@@ -175,6 +182,9 @@ public class Project3 {
 		System.out.println("D: I going to save it");
 		// Declare a string variable named four that store user's input.
 		String four = console.nextLine();
+		// use while statement to check if the user enter the valid input.
+		// if user input values that are not A, B, C, and D. it will prompt for
+		// correct input.
 		while (!(four.equalsIgnoreCase("A") || four.equalsIgnoreCase("B")
 				|| four.equalsIgnoreCase("C") || four.equalsIgnoreCase("D"))) {
 			System.out.println("Please enter what i ask");
