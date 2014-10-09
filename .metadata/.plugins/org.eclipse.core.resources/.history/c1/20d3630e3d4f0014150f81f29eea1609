@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+
+/**
+ * @author Yuteng Mei
+
+ *
+ */
+import java.util.*;
+import java.io.*;
+public class Project4 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner (new File("/Project 4/src/input"));
+		while(input.hasNextLine()){
+			String text=input.nextLine();
+			processLine(text);
+			}
+		}
+
+	public static void processLine(String text) {
+		Scanner data=new Scanner(text);
+		double checkingOpeningBalance=1540.39;
+		double savingsOpeningBalance=1000.00;
+		while(data.hasNext("Credit")){
+			String name=data.next();
+			double creditCardOpeningBalance=549.20;
+			while(data.hasNextDouble()){
+				creditCardOpeningBalance-=data.nextDouble();
+			}
+		}
+		
+	}
+	
+
+}
