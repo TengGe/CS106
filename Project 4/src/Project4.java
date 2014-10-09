@@ -15,7 +15,7 @@ public class Project4 {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) throws FileNotFoundException {
+		public static void main(String[] args) throws FileNotFoundException {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(new File("src/input.txt"));
 
@@ -68,8 +68,10 @@ public class Project4 {
 		String two = input.next();
 		double creditBalance = 0.0;
 		if (two.equals("Deposit")) {
+			input.next();
 			creditBalance += input.nextDouble();
 		} else if (two.equals("Withdrawal")) {
+			input.next();
 			creditBalance -= input.nextDouble();
 
 		} else {
