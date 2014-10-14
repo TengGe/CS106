@@ -5,9 +5,13 @@
 /**
  * @author Yuteng Mei
 
+
+
  *
  */
+// import File object.
 import java.util.*;
+
 import java.io.*;
 
 public class Project4 {
@@ -16,70 +20,117 @@ public class Project4 {
 	 * @param args
 	 */
 	public static void main(String[] args) throws FileNotFoundException {
-		// TODO Auto-generated method stub
+		// Declare three variables to store the value of each balance.
+		double checkingBalance = 0.0;
+		double savingBalance = 0.0;
+		double creditBalance = 0.0;
+		// Declare scanner object to import file.
 		Scanner input = new Scanner(new File("src/input.txt"));
 
+		// Use while loop to check the each input of the file
 		while (input.hasNext()) {
+			// Skip the date.
 			input.next();
-			String one=input.next();
+			// Store next string to the variable called one.
+			String one = input.next();
+			// Check what account type it is, and then add the deposit or
+			// withdrawal amount to the balances
 			if (one.equals("Checking")) {
-				checkingAmount(input);
-			} else if (one.equals("Saving")) {
-				savingAmount(input);
+				checkingBalance += checkingAmount(input);
+			} else if (one.equals("Savings")) {
+				savingBalance += savingAmount(input);
 			} else {
+				// Skip string card
 				input.next();
-				creditAmount(input);
+				creditBalance += creditAmount(input);
 
 			}
+
+		}
+		// output the balances after the transaction to the file call output.txt
+		PrintStream output = new PrintStream(new File("src/output.txt"));
+		output.println("Total Checking Balance: " + checkingBalance);
+		output.println("Total Savings Balance: " + savingBalance);
+		output.println("Total Credit Card Balance: " + creditBalance);
+
+	}
+
+	// Calculate the checking balance after the transaction, then return the
+	// amount
+	public static double checkingAmount(Scanner input) {
+		// Store the next string to the variable called two.
+		String two = input.next();
+		// Declare a variable called amount to store return value.
+		double amount = 0;
+		// if next string is deposit, return positive amount. if it is
+		// withdrawal, return negative amount.
+		if (two.equals("Deposit")) {
+			amount += input.nextDouble();
+			return amount;
+		}
+		if (two.equals("Withdrawal")) {
+			amount += input.nextDouble();
+			return amount * -1;
+		} else {
+			// Skip string balance
+			input.next();
+			amount += input.nextDouble();
+			return amount;
 		}
 
 	}
 
-	public static void checkingAmount(Scanner input) {
+	// Calculate the savings balance after the transaction, then return the
+	// amount
+	public static double savingAmount(Scanner input) {
+		// Store the next string to the variable called two.
 		String two = input.next();
-		double checkingBalance = 0.0;
+		// Declare a variable called amount to store return value.
+		double amount = 0;
+		// if next string is deposit, return positive amount. if it is
+		// withdrawal, return negative amount.
 		if (two.equals("Deposit")) {
-			checkingBalance += input.nextDouble();
-		} else if (two.equals("Withdrawal")) {
-			checkingBalance -= input.nextDouble();
+			amount += input.nextDouble();
+			return amount;
+		}
+		if (two.equals("Withdrawal")) {
+			amount += input.nextDouble();
+			return amount * -1;
 
 		} else {
-            input.next();
-			checkingBalance += input.nextDouble();
+			// skip string balance
+			input.next();
+			amount += input.nextDouble();
+			return amount;
 		}
-		System.out.println(checkingBalance);
+
 	}
 
-	public static void savingAmount(Scanner input) {
+	// Calculate the credit balance after the transaction, then return the
+	// amount
+	public static double creditAmount(Scanner input) {
+		// Store the next string to the variable called two.
 		String two = input.next();
-		double savingBalance = 0.0;
+		// Declare a variable called amount to store return value.
+		double amount = 0;
+		// if next string is deposit, return positive amount. if it is
+		// withdrawal, return negative amount.
 		if (two.equals("Deposit")) {
-			savingBalance += input.nextDouble();
-		} else if (two.equals("Withdrawal")) {
-			savingBalance -= input.nextDouble();
+
+			amount += input.nextDouble();
+			return amount;
+		}
+		if (two.equals("Withdrawal")) {
+
+			amount += input.nextDouble();
+			return amount * -1;
 
 		} else {
-            input.next();
-			savingBalance += input.nextDouble();
+			// skip string balance
+			input.next();
+			amount += input.nextDouble();
+			return amount;
 		}
-		System.out.println(savingBalance);
-	}
 
-	public static void creditAmount(Scanner input) {
-		String two = input.next();
-		double creditBalance = 0.0;
-		if (two.equals("Deposit")) {
-			
-			creditBalance += input.nextDouble();
-		} else if (two.equals("Withdrawal")) {
-			
-			creditBalance -= input.nextDouble();
-
-		} else {
-          
-            input.next();
-			creditBalance += input.nextDouble();
-		}
-		System.out.println(creditBalance);
 	}
 }
