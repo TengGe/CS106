@@ -3,12 +3,7 @@
  */
 
 /**
-<<<<<<< HEAD
- * @author yuten_000
-=======
  * @author Yuteng Mei
->>>>>>> origin/master
-
  */
 
 // Declare a import java package 
@@ -198,10 +193,3 @@ public class Project2 {
 		}
 	}
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
-=======
->>>>>>> 8add4fdbe848548ea30fda13228c9e84383e1254
