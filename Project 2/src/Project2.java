@@ -3,7 +3,11 @@
  */
 
 /**
+<<<<<<< HEAD
  * @author yuten_000
+=======
+ * @author Yuteng Mei
+>>>>>>> origin/master
 
  */
 
@@ -194,3 +198,7 @@ public class Project2 {
 		}
 	}
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
