@@ -1,20 +1,13 @@
-/**
- * 
- */
 
 /**
-<<<<<<< HEAD
- * @author yuten_000
-=======
  * @author Yuteng Mei
->>>>>>> origin/master
 
  */
 
 // Declare a import java package 
 import java.util.*;
 
-public class Project2 {
+public class Project3 {
 
 	/**
 	 * @param args
@@ -52,6 +45,16 @@ public class Project2 {
 		System.out.println("Do You like to play games? Yes or No");
 		// Declare a string variable named one that store user's input
 		String one = console.nextLine();
+
+		// use while statement to check if the user enter the valid input.
+		// if user input values that are not Yes or No,it will prompt for
+		// correct input.
+		while (!(one.equalsIgnoreCase("Yes") || one.equalsIgnoreCase("No"))) {
+			System.out.println("Not the answer i want");
+			System.out.print("Try again:");
+			one = console.nextLine();
+		}
+
 		// use if statement and cumulative algorithm to score responses.
 		if (one.equalsIgnoreCase("Yes")) {
 			typeOne += 2;
@@ -84,6 +87,16 @@ public class Project2 {
 		System.out.println("D.i dont like sport");
 		// Declare a string variable named Two that store user's input
 		String two = console.nextLine();
+
+		// use while statement to check if the user enter the valid input.
+		// if user input values that are not A, B, C, and D. it will prompt for
+		// correct input.
+		while (!(two.equalsIgnoreCase("A") || two.equalsIgnoreCase("B")
+				|| two.equalsIgnoreCase("C") || two.equalsIgnoreCase("D"))) {
+			System.out.println("Please enter what i ask");
+			System.out.print("Give me what i ask:");
+			two = console.nextLine();
+		}
 		// use if statement and cumulative algorithm to score responses.
 		if (two.equalsIgnoreCase("A")) {
 			typeOne--;
@@ -122,6 +135,15 @@ public class Project2 {
 		System.out.println("D: I dont know any of this movies");
 		// Declare a string variable named three that store user's input
 		String three = console.nextLine();
+		// use while statement to check if the user enter the valid input.
+		// if user input values that are not A, B, C, and D. it will prompt for
+		// correct input.
+		while (!(three.equalsIgnoreCase("A") || three.equalsIgnoreCase("B")
+				|| three.equalsIgnoreCase("C") || three.equalsIgnoreCase("D"))) {
+			System.out.println("Please enter what i ask");
+			System.out.print("Give me what i ask:");
+			three = console.nextLine();
+		}
 		// use if statement and cumulative algorithm to score responses.
 		if (three.equalsIgnoreCase("A")) {
 			typeOne += 3;
@@ -160,6 +182,15 @@ public class Project2 {
 		System.out.println("D: I going to save it");
 		// Declare a string variable named four that store user's input.
 		String four = console.nextLine();
+		// use while statement to check if the user enter the valid input.
+		// if user input values that are not A, B, C, and D. it will prompt for
+		// correct input.
+		while (!(four.equalsIgnoreCase("A") || four.equalsIgnoreCase("B")
+				|| four.equalsIgnoreCase("C") || four.equalsIgnoreCase("D"))) {
+			System.out.println("Please enter what i ask");
+			System.out.print("Give me what i ask:");
+			four = console.nextLine();
+		}
 		// use if statement and cumulative algorithm to score responses.
 		if (four.equalsIgnoreCase("A")) {
 			typeOne++;
@@ -198,10 +229,3 @@ public class Project2 {
 		}
 	}
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
-=======
->>>>>>> 8add4fdbe848548ea30fda13228c9e84383e1254
