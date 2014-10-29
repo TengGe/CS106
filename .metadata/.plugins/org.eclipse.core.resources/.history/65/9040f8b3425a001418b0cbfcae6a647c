@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+
+/**
+ * @author yuten_000
+ *
+ */
+import java.io.*;
+import java.util.*;
+
+
+public class Lines {
+	
+	public Lines() throws FileNotFoundException{
+		
+		Scanner input = new Scanner(new File("src/input.txt"));
+	}
+	
+	public int getLines(Scanner input){
+		int numLines = 0;
+	
+		while (input.hasNextLine()) {
+			input.nextLine();
+			numLines++;
+	}
+		
+	return numLines;
+	}
+	
+}

@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+
+/**
+ * @author yuten_000
+ *
+ */
+import java.io.*;
+import java.util.*;
+
+
+public class Lines {
+	
+	int numLines = 0;
+	Scanner fileReader = new Scanner(new File("src/input.txt"));
+	while (fileReader.hasNextLine()) {
+		fileReader.nextLine();
+		numLines++;
+	}
+	return numLines;
+}
