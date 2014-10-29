@@ -1,0 +1,41 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author yuten_000
+ *
+ */
+public class Calculate {
+	
+	
+	double allDegree=0.0;
+	
+	
+	
+	
+	
+	
+
+	public Calculate(double intiallDegree) {
+		this.allDegree=intiallDegree;
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+	public double getAverage() throws FileNotFoundException{
+		Lines l=new Lines();
+		Store x=new Store();
+		for (Data d: x.getData()){
+		 this.allDegree+=d.getDegree();
+		}
+		return this.allDegree/l.getLines();
+	}
+
+}

@@ -15,9 +15,8 @@ public class Project5 {
 	 */
 	public static void main(String[] args) throws FileNotFoundException{
 		// TODO Auto-generated method stub
-		
-   Calculate c=new Calculate();
-   System.out.println(c.getMin());
+    Calculate c=new Calculate();
+    
      
   
      
@@ -25,4 +24,4 @@ public class Project5 {
 	
 
 }
-
+}

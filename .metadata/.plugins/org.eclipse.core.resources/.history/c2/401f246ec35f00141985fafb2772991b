@@ -12,13 +12,10 @@ public class Store {
 		
 		 this.input = new Scanner(new File("src/input.txt"));
 	}
-	
-	
-	Lines x=new Lines();
-	public Data[] degrees=new Data[x.getLines()];
 
 	public Data[] getData() throws FileNotFoundException {
-	 
+	 Lines x=new Lines();
+     Data[] degrees=new Data[x.getLines()];
 	 
 	 while (input.hasNext()){
 		 String date=input.next();
