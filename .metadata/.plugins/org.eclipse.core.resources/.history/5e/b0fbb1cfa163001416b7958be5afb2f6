@@ -10,9 +10,9 @@ import java.util.Scanner;
  *
  */
 public class Data {
-	private String date;
-	private String dayOfWeek;
-	private double degree;
+	 String date;
+     String dayOfWeek;
+	 double degree;
 	
 	
 	
@@ -24,7 +24,11 @@ public Data(String intidate, String initdayOfWeek, double intidegree){
 	
 	
 }	
-	
+
+
+	public double getDegree(){
+		return this.degree;
+	}
 
 
 

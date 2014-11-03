@@ -1,0 +1,71 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+
+
+/**
+ * 
+ */
+
+/**
+ * @author yuten_000
+ *
+ */
+public class Calculate {
+	
+	public double allDegree=0.0;
+	public double maxValue=0.0;
+    public double minValue=1000.0;
+	Data[] data;
+	
+	Scanner input;
+	
+	public Calculate() throws FileNotFoundException{
+		
+		    this.input = new Scanner(new File("src/input.txt"));
+			Store x=new Store();
+			this.data = x.getData();
+	}
+
+
+
+
+
+	public double getAverage() throws FileNotFoundException{
+		for (Data d: this.data){
+		 this.allDegree+=d.getDegree();
+		}
+		return this.allDegree/this.data.length;
+	}
+	
+	public double getMax() throws FileNotFoundException{
+
+		for (Data d : this.data) {
+			if (d.degree > maxValue) {
+				maxValue = d.degree;
+			}
+		}
+		return maxValue;
+	}
+	
+	public double getMin() throws FileNotFoundException{
+		
+		for (Data d : this.data) {
+			if (d.degree< minValue) {
+				minValue = d.degree;
+			}
+			
+		}
+		return minValue;
+	
+}
+			
+
+	
+	
+
+}
+
+
+

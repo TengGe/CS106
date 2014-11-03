@@ -15,8 +15,15 @@ public class Project5 {
 	 */
 	public static void main(String[] args) throws FileNotFoundException{
 		// TODO Auto-generated method stub
-     Lines x=new Lines();
+		
+   Calculate c=new Calculate();
+   System.out.println(c.getAverage());
+   System.out.println(c.getMin());
+     
+  
      
 	}
+	
 
 }
+
