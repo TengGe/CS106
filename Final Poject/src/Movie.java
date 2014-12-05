@@ -23,7 +23,7 @@ public class Movie {
 
 
 	public String toString(){
-		return movies+" "+date+" "+rate+" "+type;
+		return movies+": "+date+" "+rate+" "+type;
 	}
 }
 	
