@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+
+/**
+ * @author yuten_000
+ *
+ *
+ */
+
+public class movies {
+    double date;
+    double rate;
+    String type;
+    
+
+	public movies(double initdata,double initrate, String inittype) {
+		
+		this.date=initdata;
+		this.rate=initrate;
+		this.type=inittype;
+		
+		
+
+		}
+		
+	
+	}
+
+
+

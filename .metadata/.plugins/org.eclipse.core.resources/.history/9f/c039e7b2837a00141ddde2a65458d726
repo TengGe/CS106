@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+
+/**
+ * @author yuten_000
+ *
+ */
+import java.util.*;
+import java.io.*;
+
+public class Final {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+     
+		Movie [] movies;
+		
+		Scanner input = new Scanner(new File("src/movies.txt"));
+
+		Map<String,Object>data=new HashMap<String,Object>();
+		while (input.hasNextLine()){
+		String[] line= input.nextLine().split("\\t");
+		String year = line[0];
+		String name = line[1];
+		String rate = line[2];
+		//String type = line[3];
+		//System.out.println(year);
+		//System.out.println(name);
+		System.out.println(rate);
+		//System.out.println(type);
+		
+		data.put(name, year + " " + rate);
+
+		
+		}
+		
+		System.out.println(data);
+	}
+	
+
+	}
