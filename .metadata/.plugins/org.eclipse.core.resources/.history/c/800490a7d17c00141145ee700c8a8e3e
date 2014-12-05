@@ -46,14 +46,13 @@ public class Final {
 		}
 	
 	public static void userPerferType(Scanner console, Map<String,Object> data){
-		HashSet<Movie> matches=new HashSet<>();
 		System.out.println("What type of movies do you perfer?");
 		System.out.println("A. Drama");
 		System.out.println("B. Action");
 		System.out.println("C. Fantasy");
 		System.out.println("D. Adventure");
 		System.out.println("E. History ");
-		
+		HashSet<Movie> matches=new HashSet<>();
         String choice=console.nextLine();
         if (choice.equalsIgnoreCase("A")){
         	String genere="Drama";	
