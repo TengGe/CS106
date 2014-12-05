@@ -9,18 +9,21 @@
  */
 
 public class Movie {
+	String movies;
     int date;
     double rate;
     String type;
     
-	public Movie(int initdata,double initrate,  String inittype) {
+	public Movie(String initmovies,int initdata,double initrate,  String inittype) {
+		this.movies=initmovies;
 		this.date=initdata;
 		this.rate=initrate;
 		this.type=inittype;	
 		}
-	
+
+
 	public String toString(){
-		return date+" "+rate+" "+type;
+		return movies+" "+date+" "+rate+" "+type;
 	}
 }
 	
