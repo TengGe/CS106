@@ -50,6 +50,7 @@ public class Final {
 		System.out.println("C. Fantasy");
 		System.out.println("D. Adventure");
 		System.out.println("E. History ");
+
 		String choice = console.nextLine();
 		if (choice.equalsIgnoreCase("A")) {
 			String type = "Drama";
