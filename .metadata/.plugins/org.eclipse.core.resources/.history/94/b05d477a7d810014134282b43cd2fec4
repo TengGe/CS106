@@ -243,7 +243,7 @@ public class UserPreference {
 		System.out.println("The time period of the movies you want:");
 		// Use while loop to ensure user input a integer.
 		while (!(console.hasNextInt())) {
-			System.out.println("Please enter integer:");
+			System.out.println("Please enter the correct years:");
 			console.next();
 		}
 		int choice1 = console.nextInt();

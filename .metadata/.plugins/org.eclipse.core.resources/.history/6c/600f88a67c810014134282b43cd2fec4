@@ -243,7 +243,7 @@ public class UserPreference {
 		System.out.println("The time period of the movies you want:");
 		// Use while loop to ensure user input a integer.
 		while (!(console.hasNextInt())) {
-			System.out.println("Please enter integer:");
+			System.out.println("Please enter the years:");
 			console.next();
 		}
 		int choice1 = console.nextInt();
@@ -255,7 +255,7 @@ public class UserPreference {
 		System.out.println("to");
 		// Use while loop to ensure user input a integer.
 		while (!(console.hasNextInt())) {
-			System.out.println("Please enter integer:");
+			System.out.println("Please enter the years:");
 			console.next();
 		}
 		int choice2 = console.nextInt();
@@ -314,7 +314,7 @@ public class UserPreference {
 
 			}
 		}
-		// If the list does not contain any movies that user prefers, print out
+		// If the list does not contain any movies that user prefer, print out
 		// instruction.
 		else {
 			System.out
@@ -328,7 +328,7 @@ public class UserPreference {
 	 * @param console
 	 *            Accept a console object as parameter.
 	 * @param matches2
-	 *            Accept a list named matches2 as parameter.
+	 *            Accept a list named matches2.
 	 */
 	public static void shuffle(Scanner console, List<Movie> matches2) {
 		System.out
@@ -341,8 +341,7 @@ public class UserPreference {
 				System.out.println("Invalid. Please enter again:");
 				one = console.next();
 			}
-			// Use if statement to determine user input want to shuffle the list
-			// or
+			// Use if statement to determine user input a string name shuffle or
 			// not
 			if (one.equalsIgnoreCase("shuffle")) {
 				Collections.shuffle(matches2);
