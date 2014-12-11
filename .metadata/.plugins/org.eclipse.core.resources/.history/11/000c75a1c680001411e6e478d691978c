@@ -1,0 +1,277 @@
+/**
+ * @author yuten_000
+ *
+ */
+import java.util.*;
+import java.io.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.Iterator;
+
+public class Final {
+
+	/**
+	 * @param args
+	 */
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		Scanner console = new Scanner(System.in);
+		Scanner input = new Scanner(new File("src/movies.txt"));
+		inputMovie(console, input);
+
+	}
+
+	public static void inputMovie(Scanner console, Scanner input) {
+		Map<String, Movie> data = new HashMap<String, Movie>();
+		while (input.hasNextLine()) {
+			String[] line = input.nextLine().split("\\t");
+			data.put(line[1], new Movie(line[1], Integer.parseInt(line[0]),
+					Double.parseDouble(line[2]), line[3]));
+		}
+
+		userPreferType(console, data);
+
+	}
+
+	public static void userPreferType(Scanner console, Map<String, Movie> data) {
+		Set<Movie> matches = new HashSet<Movie>();
+		System.out.println("What type of movies do you perfer?");
+		System.out.println("A. Action      F. Crime     K. Sci-Fi ");
+		System.out.println("B. Adventure   G. Drama     L. Sport");
+		System.out.println("C. Animation   H. Fantasy   M. Romance");
+		System.out.println("D. Biography   I. Horror    N. War");
+		System.out.println("E. Comedy      J. Mystery   O. Western");
+		String choice = console.nextLine();
+		while (!(choice.equalsIgnoreCase("A") || choice.equalsIgnoreCase("B")
+				|| choice.equalsIgnoreCase("C") || choice.equalsIgnoreCase("D")
+				|| choice.equalsIgnoreCase("E") || choice.equalsIgnoreCase("F")
+				|| choice.equalsIgnoreCase("G") || choice.equalsIgnoreCase("H")
+				|| choice.equalsIgnoreCase("I") || choice.equalsIgnoreCase("J")
+				|| choice.equalsIgnoreCase("K") || choice.equalsIgnoreCase("L")
+				|| choice.equalsIgnoreCase("M") || choice.equalsIgnoreCase("N") || choice
+					.equalsIgnoreCase("O"))) {
+			System.out.println("Please select the type of movies you prefer:");
+			choice = console.nextLine();
+
+		}
+		if (choice.equalsIgnoreCase("A")) {
+			String type = "Action";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("B")) {
+			String type = "Adventure";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("C")) {
+			String type = "Animation";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("D")) {
+			String type = "Biography";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("E")) {
+			String type = "Comedy";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("F")) {
+			String type = "Crime";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("G")) {
+			String type = "Drama";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("H")) {
+			String type = "Fantasy";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("I")) {
+			String type = "Horror";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("J")) {
+			String type = "Mystery";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("K")) {
+			String type = "Sci-Fi";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("L")) {
+			String type = "Sport";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("M")) {
+			String type = "Romance";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else if (choice.equalsIgnoreCase("N")) {
+			String type = "War";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		} else {
+			String type = "Western";
+			for (Movie m : data.values()) {
+				if (m.type.contains(type)) {
+					matches.add(m);
+				}
+			}
+
+		}
+		UserPreferYears(console, matches);
+
+	}
+
+	public static void UserPreferYears(Scanner console, Set<Movie> matches) {
+		List<Movie> matches2 = new ArrayList<Movie>();
+		System.out.println("The time period of the movies you want:");
+
+		while (!(console.hasNextInt())) {
+			System.out.println("Please enter the years:");
+			console.next();
+		}
+		int choice1 = console.nextInt();
+		while (choice1 >= 2015) {
+			System.out.println("Please enter the correct years:");
+			choice1 = console.nextInt();
+		}
+		System.out.println("to");
+
+		while (!(console.hasNextInt())) {
+			System.out.println("Please enter the years:");
+			console.next();
+		}
+		int choice2 = console.nextInt();
+		while (choice2 < choice1 || choice2 >= 2015) {
+			System.out.println("Please enter the correct years:");
+			choice2 = console.nextInt();
+		}
+
+		for (Movie m : matches) {
+			if (m.date == choice1) {
+				matches2.add(m);
+
+			}
+
+		}
+
+		while (choice1 < choice2) {
+			choice1++;
+			for (Movie m : matches) {
+				if (m.date == choice1) {
+					matches2.add(m);
+
+				}
+
+			}
+		}
+
+		System.out.println();
+		sizeOfList(console, matches2);
+
+	}
+
+	public static void sizeOfList(Scanner console, List<Movie> matches2) {
+		if (matches2.size() >= 5) {
+			List<Movie> sub = matches2.subList(0, 5);
+			for (Movie movies : sub) {
+				System.out.println(movies);
+
+			}
+
+			shuffle(console, matches2);
+		} else if(matches2.size()>=1 && matches2.size()<5){
+			System.out
+					.println("These are the movies i recommended. if you want more, please enlarge your time period");
+			for (Movie movies : matches2) {
+				System.out.println(movies);
+
+			}
+		}
+	}
+
+	public static void shuffle(Scanner console, List<Movie> matches2) {
+		System.out
+				.println("These are the movies i recommended. If you want more, please Enter shuffle:");
+
+		while (console.hasNext()) {
+			String one = console.next();
+
+			while (!(one.equalsIgnoreCase("shuffle"))) {
+				System.out.println("Invalid. Please enter again:");
+				one = console.next();
+			}
+			if (one.equalsIgnoreCase("shuffle")) {
+				Collections.shuffle(matches2);
+				List<Movie> sub = matches2.subList(0, 5);
+				for (Movie movies : sub) {
+					System.out.println(movies);
+				}
+			}
+
+		}
+
+	}
+
+}

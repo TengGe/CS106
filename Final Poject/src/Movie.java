@@ -8,22 +8,36 @@
  *
  */
 
+// Create a class that store movie information.
 public class Movie {
+	// Declare the variables name movies, date, rate and type.
 	String movies;
-    int date;
-    double rate;
-    String type;
-    
-	public Movie(String initmovies,int initdata,double initrate,  String inittype) {
-		this.movies=initmovies;
-		this.date=initdata;
-		this.rate=initrate;
-		this.type=inittype;	
-		}
+	int date;
+	double rate;
+	String type;
 
+	/**
+	 * Create a constructor that initial the variables.
+	 * 
+	 * @param initmovies
+	 *            Initial the default value of movies
+	 * @param initdata
+	 *            Initial the default value of date
+	 * @param initrate
+	 *            Initial the default value rate
+	 * @param inittype
+	 *            Initial the default value type
+	 */
+	public Movie(String initmovies, int initdata, double initrate,
+			String inittype) {
+		this.movies = initmovies;
+		this.date = initdata;
+		this.rate = initrate;
+		this.type = inittype;
+	}
 
-	public String toString(){
-		return movies+": "+date+" "+rate+" "+type;
+	// Print the variables.
+	public String toString() {
+		return movies + ": " + date + " " + rate + " " + type;
 	}
 }
-	

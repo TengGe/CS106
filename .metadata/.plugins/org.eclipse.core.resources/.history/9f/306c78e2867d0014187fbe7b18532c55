@@ -1,0 +1,36 @@
+
+
+
+import java.util.ArrayList;
+
+import java.util.Iterator;
+import java.util.*;
+import java.util.List;
+
+
+
+public class TTTT {
+
+	public static void main(String[] args) {
+    	
+		List<Integer> matches = new ArrayList<Integer>();
+		matches.add(1994);
+		matches.add(1995);
+		matches.add(1996);
+		matches.add(1997);
+		matches.add(1998);
+		matches.add(1999);
+		Iterator<Integer> i=matches.iterator();
+        while(i.hasNext()){
+      	  int x=i.next();
+      	  if(!(x==1994)){
+      		  matches.remove();
+      	  }
+        }
+       System.out.println(matches);
+    
+        }
+	
+}
+
+

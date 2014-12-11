@@ -6,22 +6,54 @@
  * @author ymei
  *
  */
+
+
+import java.util.ArrayList;
+
+import java.util.Iterator;
+import java.util.*;
+import java.util.List;
 public class HelloWorld {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println("-----");
-		System.out.println("        O");
-		System.out.println("        +");
-		System.out.println("     ------");
-		System.out.println("----");
-		System.out.println("-----   ----");
-		System.out.println("---------- -");
-		System.out.println("\"Hello World!\"I said");
 
-		// TODO Auto-generated method stub
+		List<String> list = new ArrayList<String>();
+
+		// Insert some sample values.
+
+		list.add("Value1");
+
+		list.add("Value2");
+
+		list.add("Value3");
+
+		// Get an iterator.
+
+		Iterator<String> ite = list.iterator();
+
+		/*
+		 * Remove the second value of the list, while iterating over its
+		 * elements,
+		 * 
+		 * using the iterator's remove method.
+		 */
+
+		while (ite.hasNext()) {
+
+			String value = ite.next();
+
+			if (value.equals("Value2"))
+
+				ite.remove();
+
+			else
+
+				System.out.println(value);
+
+		}
 
 	}
 

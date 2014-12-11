@@ -1,0 +1,29 @@
+
+
+
+import java.util.ArrayList;
+
+import java.util.Iterator;
+import java.util.*;
+import java.util.List;
+import java.util.Collection;
+
+
+public class TTTT {
+
+	public static void main(String[] args) {
+    	
+		Set<Integer> matches = new HashSet<Integer>();
+		matches.add(1994);
+		matches.add(1995);
+		matches.add(1996);
+		matches.add(1997);
+		matches.add(1998);
+		matches.add(1999);
+        Collections.shuffle((List<?>) matches);
+  
+        }
+	
+}
+
+

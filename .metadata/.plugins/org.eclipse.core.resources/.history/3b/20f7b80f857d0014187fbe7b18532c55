@@ -1,0 +1,23 @@
+
+
+import java.util.*;
+
+public class TTTT {
+
+	public static void main(String[] args) {
+    	
+		Set<Integer> matches = new HashSet<Integer>();
+        for (int i=10;i>=0;i--){
+        	if (i%2==0){
+        	matches.add(i);
+        }
+    
+  System.out.println(matches);
+	
+
+
+    
+        }
+}}
+
+

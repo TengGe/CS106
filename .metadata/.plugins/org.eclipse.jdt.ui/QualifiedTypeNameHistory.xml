@@ -10,4 +10,5 @@
 <fullyQualifiedTypeName name="javax.sound.sampled.AudioFileFormat.Type"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>
