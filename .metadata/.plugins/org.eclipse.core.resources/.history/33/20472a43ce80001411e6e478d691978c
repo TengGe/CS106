@@ -1,0 +1,45 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
+import java.io.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+
+/**
+ * 
+ */
+
+/**
+ * @author yuten_000
+ *
+ */
+public class UserPreference {
+	
+	// Create a scanner object called input
+	Scanner console;
+	Scanner input;
+
+
+	/**
+	 * Read the file called moives
+	 * 
+	 * @throws FileNotFoundException
+	 */
+	public UserPreference() throws FileNotFoundException {
+        this.console=new Scanner(System.in);
+		this.input = new Scanner(new File("src/movies.txt"));
+	}
+	
+	public void getMovies(){
+		inputMovie(console, input);
+	}
+	
+	
+	
+	
+	
+
+}

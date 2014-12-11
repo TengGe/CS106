@@ -1,0 +1,31 @@
+/**
+ * @author yuten_000
+ *
+ */
+import java.util.*;
+import java.io.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+
+public class Final {
+
+	/**
+	 * @param args
+	 */
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// scanner gets its input from the console
+		//Scanner console = new Scanner(System.in);
+		// Declare scanner object to import movies file.
+		//Scanner input = new Scanner(new File("src/movies.txt"));
+        UserPreference x=new UserPreference();
+        x.getMovies();
+		// call a method named inputMovie
+		//inputMovie(console, input);
+
+	}
+
+}
