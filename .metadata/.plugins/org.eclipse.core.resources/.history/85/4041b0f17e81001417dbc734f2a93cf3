@@ -3,12 +3,12 @@
  */
 
 /**
- * A class that store movie information.
- * 
  * @author yuten_000
+ *
  *
  */
 
+// Create a class that store movie information.
 public class Movie {
 	// Declare the variables name movies, date, rate and type.
 	String movies;

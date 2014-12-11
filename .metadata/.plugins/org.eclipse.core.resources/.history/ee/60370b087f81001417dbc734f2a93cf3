@@ -8,6 +8,10 @@ import java.io.*;
 
 public class Final {
 
+	/**
+	 * @param args
+	 */
+
 	public static void main(String[] args) throws FileNotFoundException {
 		// Create a UserPreference object called x.
 		UserPreference x = new UserPreference();

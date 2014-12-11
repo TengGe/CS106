@@ -10,9 +10,16 @@ import java.util.Scanner;
 import java.util.Set;
 
 /**
- * A class that prompt user for input to determine their preference of movies.
+ * 
+ */
+
+
+
+
+/**
  * 
  * @author yuten_000
+ * A object that prompt user for input to determine their preference of movies.
  */
 public class UserPreference {
 
